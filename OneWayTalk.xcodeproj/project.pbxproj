@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EB9F1DFA979A7ED3E3407F7 /* Pods_OneWayTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A493175C25F7B1E29FABD685 /* Pods_OneWayTalk.framework */; };
+		B920B2361E9E5918004CF5D0 /* OneWayStoreSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B920B2351E9E5918004CF5D0 /* OneWayStoreSubscriber.swift */; };
 		B9363EBF1E99858700B24DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9363EBE1E99858700B24DA9 /* AppDelegate.swift */; };
 		B9363EC61E99858700B24DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9363EC51E99858700B24DA9 /* Assets.xcassets */; };
 		B9363EC91E99858700B24DA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9363EC71E99858700B24DA9 /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 		1F41175C0A80A33EAF2704A5 /* Pods-OneWayTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWayTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneWayTalk/Pods-OneWayTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		7A35B4ADE99E1CAA9E88F89E /* Pods-OneWayTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWayTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneWayTalk/Pods-OneWayTalk.release.xcconfig"; sourceTree = "<group>"; };
 		A493175C25F7B1E29FABD685 /* Pods_OneWayTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneWayTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B920B2351E9E5918004CF5D0 /* OneWayStoreSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneWayStoreSubscriber.swift; sourceTree = "<group>"; };
 		B9363EBB1E99858700B24DA9 /* OneWayTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWayTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9363EBE1E99858700B24DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9363EC51E99858700B24DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B9363EE41E99869D00B24DA9 /* OneWayViewController.swift */,
+				B920B2351E9E5918004CF5D0 /* OneWayStoreSubscriber.swift */,
 				B9363EE31E99869D00B24DA9 /* OneWayView.swift */,
 			);
 			name = Screens;
@@ -329,6 +332,7 @@
 				B9363EF31E99917900B24DA9 /* AppState.swift in Sources */,
 				B9363EF11E998BC100B24DA9 /* Actions.swift in Sources */,
 				B9363EBF1E99858700B24DA9 /* AppDelegate.swift in Sources */,
+				B920B2361E9E5918004CF5D0 /* OneWayStoreSubscriber.swift in Sources */,
 				B9363EE51E99869D00B24DA9 /* OneWayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,12 +472,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F41175C0A80A33EAF2704A5 /* Pods-OneWayTalk.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KWV3LMSGNJ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OneWayTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = richy486.OneWayTalk;
@@ -486,12 +488,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A35B4ADE99E1CAA9E88F89E /* Pods-OneWayTalk.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KWV3LMSGNJ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OneWayTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = richy486.OneWayTalk;

@@ -24,6 +24,5 @@ struct AppReducer: Reducer {
         }
         
         return state
-        
     }
 }
